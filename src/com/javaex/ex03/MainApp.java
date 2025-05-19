@@ -5,7 +5,7 @@ public class MainApp {
 
 	public static void main(String[] args) {
 
-		//숫자 출장 보내서 일시키기
+		//숫자 출장 보내서 일시키기 --> 쓰레드 생성
 		Thread t01 = new DigitThread();
 		Thread t02 = new LowerThead();
 		Thread t03 = new UpperThread();

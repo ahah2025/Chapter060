@@ -1,5 +1,12 @@
 package com.javaex.ex05;
 
+//이미 상속받은게 있어서 Thread를 상속 받을 수 없을때
+/*
+public class DigitThread extends Shape, Thread{
+	
+} 
+*/
+
 public class DigitThread implements Runnable{
 
 	public void run() {

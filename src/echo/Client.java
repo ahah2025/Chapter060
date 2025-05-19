@@ -49,6 +49,8 @@ public class Client {
 		InputStreamReader sisr = new InputStreamReader(sin,"MS949");
 		BufferedReader sbr = new BufferedReader(sisr);
 		*/
+		
+		
 		//------------------------------------
 		while(true) { //반복문
 			
@@ -77,7 +79,7 @@ public class Client {
 		
 		//println 스트림
 		OutputStream pout = System.out;
-		OutputStreamWriter posw = new OutputStreamWriter(pout,"MS949");
+		OutputStreamWriter posw = new OutputStreamWriter(pout,"UTF-8"); //MS949
 		BufferedWriter pbw = new BufferedWriter(posw);
 		
 		pbw.write("<클라이언트 종료>");
@@ -85,8 +87,9 @@ public class Client {
 		pbw.flush();
 		
 		//닫기
-		//sbr.close();
+		pbw.close();
 		sc.close();
+		//sbr.close();
 		br.close();
 		bw.close();
 		socket.close();

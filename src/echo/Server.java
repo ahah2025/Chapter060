@@ -70,9 +70,9 @@ public class Server {
 		System.out.println("<서버 종료>");
 		
 		//자원정리
-		socket.close(); 
 		br.close();
 		bw.close();
+		socket.close(); 
 		serverSocket.close();
 	}
 }

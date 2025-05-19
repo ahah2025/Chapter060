@@ -1,14 +1,12 @@
 package com.javaex.ex06;
 
-import com.javaex.ex05.DigitThread;
-
 public class MainApp {
 
 	public static void main(String[] args) {
 		
-		Runnable dt = new DigitThread();
-		Runnable ut = new UpperThread();
-		Runnable lt = new LowerThread();
+		Runnable dt = new DigitImpl();
+		Runnable ut = new UpperImpl();
+		Runnable lt = new LowerImpl();
 		
 		//출장 --> 숫자출력
 		Thread t01 = new Thread(dt); 

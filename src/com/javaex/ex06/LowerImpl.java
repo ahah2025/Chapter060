@@ -1,8 +1,9 @@
-package com.javaex.ex03;
+package com.javaex.ex06;
 
-public class LowerThead extends Thread{
-
+public class LowerImpl implements Runnable{
 	//소문자
+	
+	@Override
 	public void run() {
 		for(char ch='a'; ch<='z'; ch++) {
 			System.out.println(ch);

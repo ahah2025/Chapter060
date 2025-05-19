@@ -1,16 +1,18 @@
-//테스트
-package com.javaex.ex03;
+package com.javaex.ex06;
 
-public class UpperThread extends Thread{
+public class UpperImpl implements Runnable{
 
 	//대문자
+	@Override
 	public void run() {
 		for(char ch='A'; ch<='Z'; ch++) {
+			System.out.println(ch);
 			try {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
 		}
+		
 	}
 }

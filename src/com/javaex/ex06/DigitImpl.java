@@ -1,12 +1,12 @@
 package com.javaex.ex06;
 
-public class LowerThread implements Runnable{
-	//소문자
-	
+public class DigitImpl implements Runnable{
+
+	//숫자
 	@Override
 	public void run() {
-		for(char ch='a'; ch<='z'; ch++) {
-			System.out.println(ch);
+		for(int i=0; i<=30; i++) {
+			System.out.println(i);
 			
 			try {
 				Thread.sleep(1000);

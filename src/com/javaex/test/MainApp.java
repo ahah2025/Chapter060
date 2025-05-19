@@ -1,15 +1,15 @@
-package com.javaex.ex04;
+package com.javaex.test;
 
 public class MainApp {
 
 	public static void main(String[] args) {
+
+		Runnable pt = new PensonThread();
+		Thread p01 = new Thread(pt);
+		p01.start();
 		
-		//숫자 출장
-		Runnable dt = new DigitThread();
-		dt.run();
-		
-		//대문자 메인
-		for(char ch='A'; ch<='Z';ch++) {
+		//문자출력 --> 메인
+		for(char ch='A';ch<='Z'; ch++ ) {
 			System.out.println(ch);
 			
 			try {
@@ -18,5 +18,15 @@ public class MainApp {
 				e.printStackTrace();
 			}
 		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
+
 }
