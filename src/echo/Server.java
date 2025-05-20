@@ -1,4 +1,3 @@
-//테스트
 package echo;
 
 import java.io.BufferedReader;
